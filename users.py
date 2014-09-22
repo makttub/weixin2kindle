@@ -23,6 +23,7 @@ class user(object):
 
         try:
             conn = sqlite3.connect(dbdir)
+            conn.text_factory = str
             cursor = conn.cursor()
 
             for i in range(len(self.accounts)):
@@ -47,7 +48,7 @@ class user(object):
             dbdir = os.path.join(self.dirpath, 'sended.db')
             conn = sqlite3.connect(dbdir)
             cursor = conn.cursor()
-            cursor.execute('create table if not exists send (account varchar(20), title not null, url not null)')
+            cursor.execute('create table if not exists send (account varchar(20), title str not null, url str not null)')
         finally:
             cursor.close()
             conn.commit()
@@ -55,11 +56,8 @@ class user(object):
 
 if __name__ == '__main__':
     mintshow = account.pubAccount('mintshow', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
-    mintshow.getTitleUrl()
     sagacitymac = account.pubAccount('sagacitymac', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
-    sagacitymac.getTitleUrl()
 
-    wz = user('wz', [sagacitymac])
-    # wz = user('wz', [mintshow, sagacitymac])
+    wz = user('wz', [mintshow, sagacitymac])
     wz.checkList()
 

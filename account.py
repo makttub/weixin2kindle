@@ -1,58 +1,42 @@
 #coding: utf-8
 
-import sys,urllib2
-from HTMLParser import HTMLParser
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
-from PyQt4.QtWebKit import *
+import sys,urllib
 from lxml import etree
+import re
 
 class getArticleError(StandardError):
     pass
-
-class Render(QWebPage):
-    def __init__(self, url):
-        self.app = QApplication(sys.argv)
-        QWebPage.__init__(self)
-        self.loadFinished.connect(self._loadFinished)
-        self.mainFrame().load(QUrl(url))
-        self.app.exec_()
-
-    def _loadFinished(self, result):
-        self.frame = self.mainFrame()
-        self.app.quit()
-
 
 class pubAccount(object):
     def __init__(self, name, url):
         self.name = name
         self.url = url
-        # self.getTitleUrl(url)
+        self.getTitleUrl()
 
     def getTitleUrl(self):
-        r = Render(self.url)
-        htmlCont = r.frame.toHtml()
-        src = unicode(htmlCont)
-        tree = etree.HTML(src)
+        xmlurl = 'http://weixin.sogou.com/gzhjs?cb=sogou.weixin.gzhcb&' + self.url[28:] + '&page=1'
+        xml = urllib.urlopen(xmlurl).read()
+        retitle = re.compile(r'<title>.*?>')
+        reurl = re.compile(r'<url>.*?>')
 
-        urls = tree.xpath(u"//*[@id=\"sogou_vr_11002601_title_0\"]/@href")
-        titles = tree.xpath(u"//*[@id=\"sogou_vr_11002601_title_0\"]/text()")
+        retitles = retitle.findall(xml)
+        reurls = reurl.findall(xml)
 
-        if len(urls) != len(titles):
+        if len(reurls) != len(retitles):
             raise getArticleError()
 
+        titles=[]
+        urls=[]
+
+        for i in range(len(retitles)):
+            titles.append(retitles[i][16:-3])
+            urls.append(reurls[i][14:-3])
+
         self.titleUrl = dict(zip(titles,urls))
-
-        # for i in range(len(self.urls)):
-        #     self.send = True
-
         return self.titleUrl
 
 if __name__ == '__main__':
-    url = u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg'
-    mintshow = pubAccount('mintshow', url)
-    mintshow.getTitleUrl(mintshow.url)
-    # url = 'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw'
-    # sagacitymac = pubAccount('sagacitymac', url)
-    # sagacitymac.getTitleUrl(sagacitymac.url)
+    mintshow = pubAccount('mintshow', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
+    sagacitymac = pubAccount('sagacitymac', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
     print mintshow.titleUrl
+    print sagacitymac.titleUrl
