@@ -13,24 +13,8 @@ class Git_Pocket_Guide(BasicNewsRecipe):
         return link.contents[0].strip()
 
     def parse_index(self):
-        soup = self.index_to_soup(self.url_prefix + 'index.html')
-
-        div = soup.find('div', { 'class': 'toc' })
-
-        articles = []
-        for link in div.findAll('a'):
-            if '#' in link['href']:
-                continue
-
-            if not 'ch' in link['href']:
-                continue
-
-            til = self.get_title(link)
-            url = self.url_prefix + link['href']
-            a = { 'title': til, 'url': url }
-
-            articles.append(a)
-
         ans = [('人生如戏', [{'url': u'http://mp.weixin.qq.com/s?__biz=MjM5MTc2MDEzMw==&mid=200664712&idx=1&sn=9e6e9dd1fe595256d461e2ddd1fe8208&3rd=MzA3MDU4NTYzMw==&scene=6#rd', 'title': u'认真与否，苹果早已经赢了'}, {'url': u'http://mp.weixin.qq.com/s?__biz=MjM5MTc2MDEzMw==&mid=200651935&idx=2&sn=42af76856c34a87ac69ded8d99a4f8e8&3rd=MzA3MDU4NTYzMw==&scene=6#rd', 'tilte': u'推荐公众号：聚焦传媒'}]), ('人生如戏之戏剧电影与心理', [{'url': u'http://mp.weixin.qq.com/s?__biz=MzA3OTgxNTQzOQ==&mid=201237093&idx=1&sn=45ca07b65e9e72914704023437493ef2&3rd=MzA3MDU4NTYzMw==&scene=6#rd', 'title': u'人生如戏之戏剧电影与心理'}])]
 
         return ans
+
+
