@@ -29,28 +29,30 @@ class pubAccount(object):
         self.url = url
         # self.getTitleUrl(url)
 
-    def getTitleUrl(self, url):
-        r = Render(url)
+    def getTitleUrl(self):
+        r = Render(self.url)
         htmlCont = r.frame.toHtml()
         src = unicode(htmlCont)
         tree = etree.HTML(src)
 
-        self.urls = tree.xpath(u"//*[@id=\"sogou_vr_11002601_title_0\"]/@href")
-        self.titles = tree.xpath(u"//*[@id=\"sogou_vr_11002601_title_0\"]/text()")
+        urls = tree.xpath(u"//*[@id=\"sogou_vr_11002601_title_0\"]/@href")
+        titles = tree.xpath(u"//*[@id=\"sogou_vr_11002601_title_0\"]/text()")
 
-        if len(self.urls) != len(self.titles):
+        if len(urls) != len(titles):
             raise getArticleError()
+
+        self.titleUrl = dict(zip(titles,urls))
 
         # for i in range(len(self.urls)):
         #     self.send = True
 
-        return self.urls, self.titles
+        return self.titleUrl
 
 if __name__ == '__main__':
-    # url = u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg'
-    # mintshow = pubAccount('mintshow', url)
-    url = 'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw'
-    sagacitymac = pubAccount('sagacitymac', url)
-    sagacitymac.getTitleUrl(sagacitymac.url)
-    print sagacitymac.titles
-    print sagacitymac.urls
+    url = u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg'
+    mintshow = pubAccount('mintshow', url)
+    mintshow.getTitleUrl(mintshow.url)
+    # url = 'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw'
+    # sagacitymac = pubAccount('sagacitymac', url)
+    # sagacitymac.getTitleUrl(sagacitymac.url)
+    print mintshow.titleUrl
