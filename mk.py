@@ -1,3 +1,5 @@
+#coding: utf-8
+
 import users
 import account
 from datetime import *
@@ -17,9 +19,9 @@ def mkrecipe(u):
         pass
 
 if __name__ == '__main__':
-    mintshow = account.pubAccount('mintshow', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
-    sagacitymac = account.pubAccount('sagacitymac', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
+    mintshow = account.pubAccount('人生如戏', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
+    sagacitymac = account.pubAccount('MacTalk By 池建强', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
 
     wz = users.user('wz', [mintshow, sagacitymac])
-
+    wz.checkList()
     mkrecipe(wz)

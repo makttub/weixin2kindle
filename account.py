@@ -36,7 +36,7 @@ class pubAccount(object):
         return self.titleUrl
 
 if __name__ == '__main__':
-    mintshow = pubAccount('mintshow', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
-    sagacitymac = pubAccount('sagacitymac', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
+    mintshow = pubAccount(u'人生如戏', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
+    sagacitymac = pubAccount(u'MacTalk By 池建强', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
     print mintshow.titleUrl
     print sagacitymac.titleUrl

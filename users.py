@@ -48,7 +48,7 @@ class user(object):
             dbdir = os.path.join(self.dirpath, 'sended.db')
             conn = sqlite3.connect(dbdir)
             cursor = conn.cursor()
-            cursor.execute('create table if not exists send (account varchar(20), title str not null, url str not null)')
+            cursor.execute('create table if not exists send (account str not null, title str not null, url str not null)')
         finally:
             cursor.close()
             conn.commit()
