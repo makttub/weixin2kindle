@@ -1,0 +1,18 @@
+from calibre.web.feeds.recipes import BasicNewsRecipe
+
+class Git_Pocket_Guide(BasicNewsRecipe):
+
+    title = 'Weixin info ' + '2014_09_23_19_18_00_855617'
+    cover_url = 'http://simplegene.qiniudn.com/cover.jpg'
+    description = ''
+
+    no_stylesheets = True
+    # keep_only_tags = [{ 'class': 'rich_media_content_wrp' }]
+
+    def get_title(self, link):
+        return link.contents[0].strip()
+
+    def parse_index(self):
+        ans = [('\xe4\xba\xba\xe7\x94\x9f\xe5\xa6\x82\xe6\x88\x8f', [{'url': 'http://mp.weixin.qq.com/s?__biz=MjM5MTc2MDEzMw==&mid=200692953&idx=1&sn=36c27f1ccbe94cd3b1fea1c9d56209c1&3rd=MzA3MDU4NTYzMw==&scene=6#rd', 'title': '\xe9\x81\x93\xe5\xbe\xb7\xe4\xbf\x9d\xe6\x8a\xa4\xe4\xb8\x8b\xe7\x9a\x84\xe5\x88\xbd\xe5\xad\x90\xe6\x89\x8b'}, {'url': 'http://mp.weixin.qq.com/s?__biz=MjM5MTc2MDEzMw==&mid=200692953&idx=2&sn=2bf09dbe0111c0b71fffb7ca2e4355cf&3rd=MzA3MDU4NTYzMw==&scene=6#rd', 'title': '\xe4\xb8\x80\xe6\x97\xa5\xe5\x88\xb7\xe6\x96\xb0\xe5\x9b\x9b\xe9\xa1\xb9\xe8\xa1\x8c\xe4\xb8\x9a\xe7\xba\xaa\xe5\xbd\x95 \xe4\xb9\x90\xe8\xa7\x86\xe5\x95\x86\xe5\x9f\x8e\xe6\x88\x90\xe5\x8a\x9f\xe6\x8c\x91\xe6\x88\x98\xe4\xbc\xa0\xe7\xbb\x9f\xe7\x94\xb5\xe5\x95\x86'}]), ('MacTalk By \xe6\xb1\xa0\xe5\xbb\xba\xe5\xbc\xba', [{'url': 'http://mp.weixin.qq.com/s?__biz=MjM5ODQ2MDIyMA==&mid=200861917&idx=1&sn=fcd2a6d66ef5a93f585aa2a98a5988f9&3rd=MzA3MDU4NTYzMw==&scene=6#rd', 'title': '\xe7\xad\x89\xe5\xbe\x85,\xe5\xb9\xb6\xe7\x9b\xb8\xe4\xbf\xa1\xe6\x97\xb6\xe9\x97\xb4\xe7\x9a\x84\xe5\x8a\x9b\xe9\x87\x8f'}])]
+        return ans
+    

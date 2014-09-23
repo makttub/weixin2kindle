@@ -1,0 +1,173 @@
+
+---------------------------------------------
+Status of making mobi:
+01% Converting input to HTML...
+InputFormatPlugin: Recipe Input running
+Using custom recipe
+1% Fetching feeds...
+1% Got feeds from index page
+1% Trying to download cover...
+34% Downloading cover from http://simplegene.qiniudn.com/cover.jpg
+1% Generating masthead...
+Synthesizing mastheadImage
+1% Starting download [5 thread(s)]...
+1% Article downloaded: 商户为什么要选择百度直达号
+1% Article downloaded: tk教主和玄武实验室
+2% Article downloaded: 比金钱更肮脏
+2% Article downloaded: 从产业链入手, 360联合银联共同打造移动支付安全
+3% Article downloaded: 百度世界移动安全亮大招 高调开放技术能力
+3% Article downloaded: 推荐公众号:聚焦传媒
+4% Article downloaded: 别把讨钱当成众筹
+4% Article downloaded: 不光开放,还开源, 百度移动安全平台这次玩大了
+5% Article downloaded: 未来与传统 - 苹果发布会记(下)
+5% Article downloaded: 陌陌到店通:产品驱动新型商业模式
+6% Article downloaded: 周末似水流年
+6% Article downloaded: 认真与否,苹果早已经赢了
+7% Article downloaded: 未来与传统 - 苹果发布会记(上)
+7% Article downloaded: 赢者全拿
+8% Article downloaded: Mac 上的小机器人
+8% Article downloaded: 尼采《查拉图斯特拉如是说》
+9% Article downloaded: 我为什么不希望苹果公司倒掉?
+9% Article downloaded: 一天之内应聘数百家互联网公司?
+10% Article downloaded: 他和她的故事:我终究是爱你的
+10% Article downloaded: 我的青春期过得一点都不愉快
+11% Article downloaded: 世界是自己的,与他人无关  做这样的女子
+11% Article downloaded: 我想和你说会话
+12% Article downloaded: 史上最大规模寻人启事!
+12% Article downloaded: 你追求的是幸福,还是比别人幸福?
+12% Article downloaded: iOS8 - 靓丽如花
+13% Article downloaded: 用7天的时间去学会生活
+13% Article downloaded: 这就是,我想要的生活
+14% Article downloaded: 喝的不是可乐,而是意志力 by Plane Cheung
+14% Article downloaded: 冰封四海
+15% Article downloaded: 疙瘩汤 by 杨燕妃
+15% Article downloaded: 吃碗台湾鲁肉饭\u200d\u200d\u200d\u200d\u200d|雪知味
+16% Article downloaded: 永远无法接近的美好梦境
+16% Article downloaded: 鲜掉眉毛的海蟹粉丝煲  味库食录
+17% Article downloaded: 外婆拿手萝卜糕|吃学英文
+17% Article downloaded: 有理想的私房菜 by 罗格
+18% Article downloaded: 铁锅炖羊肉 by 青衫
+18% Article downloaded: 记忆里飘香的味道\u2014\u2014酱油汤 by 游荡到天光
+19% Article downloaded: 章六高三的炖锅 by 章丘赵喜
+19% Article downloaded: 【养宠物】我家有猫宋大发(上):奶猫日记
+20% Article downloaded: 【读书】如何判断一本书是否值得读?
+Could not fetch link http://mp.weixin.qq.com/s?__biz=MjM5MjY2NTM2MA==&mid=201472227&idx=1&sn=dd955fe4bb84eb889282c0eddd1551b0&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+Failed to download article: 一杯牛奶四个烧麦 by MISS猫在广州 from http://mp.weixin.qq.com/s?__biz=MjM5MjY2NTM2MA==&mid=201472227&idx=1&sn=dd955fe4bb84eb889282c0eddd1551b0&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+20% Article download failed: 一杯牛奶四个烧麦 by MISS猫在广州
+Could not fetch link http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200485730&idx=1&sn=e0368ed5ba8189ad29070eba4d984f65&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+Failed to download article: 【独自旅行】Lost in Translation (记8.8-8.20的岛国行) from http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200485730&idx=1&sn=e0368ed5ba8189ad29070eba4d984f65&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+21% Article download failed: 【独自旅行】Lost in Translation (记8.8-8.20的岛国行)
+Could not fetch link http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200485730&idx=2&sn=86ea6d8a72ad592f5b6e5b6d442a0118&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+Failed to download article: 【下扬州】甜甜的,扬州行. from http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200485730&idx=2&sn=86ea6d8a72ad592f5b6e5b6d442a0118&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+21% Article download failed: 【下扬州】甜甜的,扬州行.
+22% Article downloaded: 【深爱一个人】谈一场傲慢与偏见的恋爱
+22% Article downloaded: 【上班】假如离开这家公司 你能留下什么
+23% Article downloaded: 【旅行】12个你不知道的伊朗
+Could not fetch link http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200423652&idx=1&sn=7ea7b63dde7d9b4626cadf82550a8d62&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+Failed to download article: 【成长】最不堪回首的日子,也是最骄傲的日子 from http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200423652&idx=1&sn=7ea7b63dde7d9b4626cadf82550a8d62&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+23% Article download failed: 【成长】最不堪回首的日子,也是最骄傲的日子
+Could not fetch link http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200451263&idx=1&sn=7c4a34ddcfc4c1129796dcc6516783e5&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+Failed to download article: 【过日子】土豆排骨,走出低谷 from http://mp.weixin.qq.com/s?__biz=MzA4MjUwNzYxMA==&mid=200451263&idx=1&sn=7c4a34ddcfc4c1129796dcc6516783e5&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+23% Article download failed: 【过日子】土豆排骨,走出低谷
+24% Article downloaded: 超级经济舱是个啥
+24% Article downloaded: 世界是平的
+25% Article downloaded: 喜达屋双倍积分活动介绍
+25% Article downloaded: 填坑:About Global Transfer
+26% Article downloaded: 乘风而来,大玩家推出懒投资平台
+26% Article downloaded: 中秋同乐,驶入未来
+27% Article downloaded: 【自我管理】为什么轻易不要选择Plan B
+27% Article downloaded: 实战:阿里上市前夕,低风险捡钱
+28% Article downloaded: \u201c我该如何购买阿里巴巴的股票?\u201d
+28% Article downloaded: 当男人吐槽女人,他们在吐槽什么?
+29% Article downloaded: 一个人才能坚强过 两个人会变很脆弱
+29% Article downloaded: 介绍凯悦的常客计划(一)
+30% Article downloaded: 亚洲万里通推出Mega Miles活动
+30% Article downloaded: 没人有义务迁就你的过分
+31% Article downloaded: 大部分烟灰都差不多
+31% Article downloaded: 年轻人,你别哭啊
+32% Article downloaded: 赖不得时代赖不得你
+32% Article downloaded: \u201c异性闺蜜\u201d需要揭穿
+33% Article downloaded: 此地无人生还
+33% Article downloaded: 人终有一老,或老而猥琐,或老而优雅
+34% Article downloaded: 泼冷水的人
+34% Feeds downloaded to /tmp/calibre_1.25.0_tmp_jbnBDV/Tkl2Tc_plumber/index.html
+34% Download finished
+Failed to download the following articles:
+一杯牛奶四个烧麦 by MISS猫在广州 from 深夜谈吃
+【独自旅行】Lost in Translation (记8.8-8.20的岛国行) from 豆瓣事情
+【下扬州】甜甜的,扬州行. from 豆瓣事情
+【成长】最不堪回首的日子,也是最骄傲的日子 from 豆瓣事情
+【过日子】土豆排骨,走出低谷 from 豆瓣事情
+Parsing all content...
+Forcing index.html into XHTML namespace
+Forcing feed_3/article_3/index.html into XHTML namespace
+Forcing feed_4/article_7/index.html into XHTML namespace
+Forcing feed_1/article_4/index.html into XHTML namespace
+Forcing feed_5/article_6/index.html into XHTML namespace
+Forcing feed_4/article_6/index.html into XHTML namespace
+Forcing feed_5/article_2/index.html into XHTML namespace
+Forcing feed_4/article_0/index.html into XHTML namespace
+Forcing feed_0/article_4/index.html into XHTML namespace
+Forcing feed_5/article_3/index.html into XHTML namespace
+Forcing feed_5/article_4/index.html into XHTML namespace
+Forcing feed_1/article_6/index.html into XHTML namespace
+Forcing feed_3/article_4/index.html into XHTML namespace
+Forcing feed_3/article_8/index.html into XHTML namespace
+Forcing feed_3/article_0/index.html into XHTML namespace
+Forcing feed_1/article_0/index.html into XHTML namespace
+Forcing feed_0/article_1/index.html into XHTML namespace
+Forcing feed_1/article_8/index.html into XHTML namespace
+Forcing feed_2/article_5/index.html into XHTML namespace
+Forcing feed_4/article_9/index.html into XHTML namespace
+Forcing feed_4/article_1/index.html into XHTML namespace
+Forcing feed_5/article_0/index.html into XHTML namespace
+Forcing feed_2/article_6/index.html into XHTML namespace
+Forcing feed_4/article_8/index.html into XHTML namespace
+Forcing feed_5/article_9/index.html into XHTML namespace
+Forcing feed_2/article_7/index.html into XHTML namespace
+Forcing feed_5/article_8/index.html into XHTML namespace
+Forcing feed_2/article_3/index.html into XHTML namespace
+Forcing feed_2/article_4/index.html into XHTML namespace
+Forcing feed_5/article_5/index.html into XHTML namespace
+Forcing feed_5/article_1/index.html into XHTML namespace
+Forcing feed_2/article_0/index.html into XHTML namespace
+Forcing feed_1/article_1/index.html into XHTML namespace
+Forcing feed_1/article_2/index.html into XHTML namespace
+Forcing feed_3/article_5/index.html into XHTML namespace
+Forcing feed_3/article_9/index.html into XHTML namespace
+Forcing feed_1/article_5/index.html into XHTML namespace
+Forcing feed_1/article_7/index.html into XHTML namespace
+Forcing feed_3/article_2/index.html into XHTML namespace
+Forcing feed_3/article_1/index.html into XHTML namespace
+Forcing feed_1/article_3/index.html into XHTML namespace
+Forcing feed_3/article_6/index.html into XHTML namespace
+Forcing feed_5/article_7/index.html into XHTML namespace
+Referenced file u'feed_4/article_2/index.html' not found
+Referenced file u'feed_4/article_5/index.html' not found
+Referenced file u'feed_3/article_7/index.html' not found
+Referenced file u'feed_7/index.html' not found
+34% Running transforms on ebook...
+Merging user specified metadata...
+Detecting structure...
+Flattening CSS and remapping font sizes...
+Source base font size is 12.00000pt
+Removing fake margins...
+Cleaning up manifest...
+Trimming unused files from manifest...
+Creating MOBI Output...
+67% Running MOBI Output plugin
+Serializing resources...
+Converting TOC for MOBI periodical indexing...
+Creating MOBI 6 output
+Generating in-line TOC...
+Applying case-transforming CSS...
+Rasterizing SVG images...
+Converting XHTML to Mobipocket markup...
+Serializing markup content...
+  Compressing markup content...
+Generating MOBI index for a periodical
+MOBI output written to /home/makttub/workspace/weixin2kindle/wz/2014_09_23_11_26_50_065738.mobi
+Output saved to   /home/makttub/workspace/weixin2kindle/wz/2014_09_23_11_26_50_065738.mobi
+---------------------------------------------
+Status of send:
+Success

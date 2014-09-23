@@ -16,14 +16,19 @@ def getTime():
     return now
 
 def mkmobi(u):
-    timenow = getTime()
-    recipepath = os.path.join(u.dirpath, timenow + '.recipe')
+    u.timenow = getTime()
+    recipepath = os.path.join(u.dirpath, u.timenow + '.recipe')
     with open(recipepath, 'w') as f:
-        head = """from calibre.web.feeds.recipes import BasicNewsRecipe
+        head1 = """from calibre.web.feeds.recipes import BasicNewsRecipe
 
 class Git_Pocket_Guide(BasicNewsRecipe):
 
-    title = 'Git Pocket Guide'
+    title = 'Weixin info ' + '"""
+
+        t = u.timenow
+
+        head2="""'
+    cover_url = 'http://simplegene.qiniudn.com/cover.jpg'
     description = ''
 
     no_stylesheets = True
@@ -47,25 +52,25 @@ class Git_Pocket_Guide(BasicNewsRecipe):
                 book.append(volume)
 
         tail = """        return ans
-        """
+    """
 
-        f.write(head + str(book) + '\n' + os.linesep + tail)
+        f.write(head1 + t + head2 + str(book) + os.linesep + tail)
 
-    shellCommands = 'ebook-convert ' + u.dirpath + os.sep + timenow + '.recipe ' + u.dirpath + os.sep + timenow + '.mobi'
+    shellCommands = 'ebook-convert ' + u.dirpath + os.sep + u.timenow + '.recipe ' + u.dirpath + os.sep + u.timenow + '.mobi'
     # print shellCommands
-    print "ebook-convert..."
     if len(book) != 0:
+        print u.name + ": ebook-convert..."
         exitStatus, out = commands.getstatusoutput(shellCommands)
-        logpath = os.path.join(u.dirpath, timenow + '.log')
-        with open(logpath, 'w') as f:
+        logpath = os.path.join(u.dirpath, u.timenow + '.log')
+        with open(logpath, 'a') as f:
+            f.write('\n---------------------------------------------\nStatus of making mobi:\n')
             f.write(str(exitStatus))
             f.write(str(out))
 
 if __name__ == '__main__':
-
     mintshow = account.pubAccount('人生如戏', u'http://weixin.sogou.com/gzh?openid=oIWsFt1FSztdLmdVbgYcZFJ8p9Fg')
     sagacitymac = account.pubAccount('MacTalk By 池建强', u'http://weixin.sogou.com/gzh?openid=oIWsFt98u7kmyb9-OpSPghHa7Uiw')
 
-    wz = users.user('wz', [mintshow, sagacitymac])
-    wz.checkList()
-    mkmobi(wz)
+    wz = users.user('wz', 'lwwz1990@kindle.com', [mintshow, sagacitymac])
+    if wz.checkList():
+        mkmobi(wz)
